@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Topic 2 - Going Loopy for Good</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="X Ellis" />
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
+<script src="js/strikeThrough.js" type="text/javascript"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Topic 2 - Going Loopy for Good</h1>
+
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Topic1</a></li>
+      <li><a href="2_Lesson.html">Topic2</a></li>
+      <li><a href="3_Lesson.html">Topic3</a></li>
+      <li><a href="4_Lesson.html">Topic4</a></li>
+      <li><a href="5_Lesson.html">Topic5</a></li>
+      <li><a href="Evaluation.html">Evaluation</a></li>
+      <li><a href="homework.html">Prep</a></li>
+    </ul>
+  </div>
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+<div id="outline-container-org98d0218" class="outline-2 objectives">
+<h2 id="org98d0218"><span class="section-number-2">1</span> Objectives</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org960fcc4" class="outline-3 learn">
+<h3 id="org960fcc4">Developing your skills in problem solving using programming language Python, specifically:</h3>
+<div class="outline-text-3" id="text-org960fcc4">
+<ul class="org-ul">
+<li>Further developing understanding on data types and purposes of variables</li>
+<li>Develop understanding the purpose of loops in problem solving</li>
+<li>Develop skills in using <b>for</b> and <b>while</b> loops</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6fb6c2b" class="outline-2 activity">
+<h2 id="org6fb6c2b"><span class="section-number-2">2</span> Data Types</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+
+<div id="outline-container-orgb91ce00" class="outline-3 learn">
+<h3 id="orgb91ce00">Why loops?</h3>
+<div class="outline-text-3" id="text-orgb91ce00">
+<ul class="org-ul">
+<li><p>
+Take a look at the following image. Using the trinket window provided, try to use turtle to produce that image.
+</p>
+
+<img src ='./img/turtle5rings.png' width=30%>
+<iframe src="https://trinket.io/embed/python/a951aff485" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<ul class="org-ul">
+<li>How about draw a shape like this?</li>
+</ul></li>
+</ul>
+
+
+<img src ='./img/turtle30rings.png' width=30%>
+</div>
+</div>
+
+<div id="outline-container-orgc1f1531" class="outline-3 try">
+<h3 id="orgc1f1531">For loops</h3>
+<div class="outline-text-3" id="text-orgc1f1531">
+<pre class="example">
+age
+your name
+area of a circle
+the result of comparing two ages
+date of birth
+
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgffdaeb9" class="outline-2 activity">
+<h2 id="orgffdaeb9"><span class="section-number-2">3</span> Variables</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org9bcef29" class="outline-3 learn">
+<h3 id="org9bcef29">Learn It</h3>
+<div class="outline-text-3" id="text-org9bcef29">
+<ul class="org-ul">
+<li>Before we talk about variables, let's draw a circle with Turtle of a radius of 90</li>
+<li><p>
+We can use 90 as it or we can use a variable called r to store the number 90 like this (in maths it could be said let r equals 90)
+</p>
+
+<p>
+r = 90
+</p>
+<iframe src="https://trinket.io/embed/python/a9339697e4" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org51bb58f" class="outline-3 try">
+<h3 id="org51bb58f">Practice 1</h3>
+<div class="outline-text-3" id="text-org51bb58f">
+<iframe src="https://trinket.io/embed/python/0043de449f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+</div>
+<div id="outline-container-org2ba266b" class="outline-3 learn">
+<h3 id="org2ba266b">Practice 2 - learn it!</h3>
+<div class="outline-text-3" id="text-org2ba266b">
+<ul class="org-ul">
+<li>Variables are pieces of data with names that are stored in computers' memories. Look at the following two examples and then finish the 4 problems.</li>
+</ul>
+
+<p>
+<b>Example 1</b> : A=30, using varialbes only, double the value in A
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span>A = 30
+<span class="linenr">2: </span>A = A + A
+</pre>
+</div>
+<p>
+<b>Example 2</b> : A=30, B=5, using varialbes only, make the variable B value equals 6
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="linenr">1: </span>A = 30
+<span class="linenr">2: </span>B = 5
+<span class="linenr">3: </span>B = A/B
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org25c460e" class="outline-3 try">
+<h3 id="org25c460e">Practice 2 - your turn!</h3>
+<div class="outline-text-3" id="text-org25c460e">
+<ul class="org-ul">
+<li><p>
+Open IDLE on your PC. In the shell, work on the following tasks. 
+<b>Problem 1</b> : make A and B both equal 6
+</p>
+<div class="org-src-container">
+<pre class="src src-python">A = 10
+B = 4
+</pre>
+</div>
+
+<p>
+<b>Problem 2</b> : make A and B both equal 25 while C equal 22
+</p>
+<div class="org-src-container">
+<pre class="src src-python">A = 10
+B = 15
+C = 3
+</pre>
+</div>
+
+<p>
+<b>Problem 3</b> : make A equal 4 and B equal 12
+</p>
+<div class="org-src-container">
+<pre class="src src-python">A = 12
+B = 3
+</pre>
+</div>
+
+<p>
+<b>Problem 4</b> : swap! make A equal 4 and B equal 10
+</p>
+<div class="org-src-container">
+<pre class="src src-python">A = 10
+B = 4
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org649989c" class="outline-3 key">
+<h3 id="org649989c">Key Points Check</h3>
+<div class="outline-text-3" id="text-org649989c">
+<ol class="org-ol">
+<li>Computers take input data, process them and generate outputs we are interested in</li>
+<li>There are 4 common data types: integer, string, real/float and Boolean</li>
+<li>Variables are named pieces of data for easy processing by computers and their names should be easily understood for their purposes in a program by humans</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

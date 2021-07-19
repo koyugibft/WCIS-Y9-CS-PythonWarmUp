@@ -1,0 +1,231 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/strikeThrough.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil html-postamble:nil
+#+TITLE: Topic 1 - Data Types and Variables
+#+AUTHOR: X Ellis
+
+#+BEGIN_EXPORt html
+
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Topic1</a></li>
+      <li><a href="2_Lesson.html">Topic2</a></li>
+      <li><a href="3_Lesson.html">Topic3</a></li>
+      <li><a href="4_Lesson.html">Topic4</a></li>
+      <li><a href="5_Lesson.html">Topic5</a></li>
+      <li><a href="Evaluation.html">Evaluation</a></li>
+      <li><a href="homework.html">Prep</a></li>
+    </ul>
+  </div>
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+#+END_EXPORT
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing your skills in problem solving using programming language Python, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Understand data types and purposes of variables
+- Understand the two types of loops and when to use which
+- Understand the using of conditionals and logic operations
+- Understand why modular programming is used
+* Data Types
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+
+** Why data types?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END: 
+- Computers work by processing some data and produce some outputs we are interested in knowing.  For example,
+  - when you log on to your account, computers compare your input username and password with what stored on computers to either allow you log in or not.
+  - in a computer aided car, the data could be distance to objects and the car's own speed and direction etc. Using those data, the car's onboard computer can send alert to the driver or slowing down the car.
+  - when you sign up to an online service, it may ask you for your name, your age and your email address. Computers then use those data to decide if you meet the age requirement, or use the email address to send your account information.
+- Computers need to know what types of data they are working with mainly for two reasons:
+  1. to store them correctly
+  2. to use them safely in calculations. For example, your age divided your name is not a safe calculation and computers will not perform
+
+- There are 4 common data types:
+  1. Integer - whole numbers
+  2. Real/float - numbers with decimal point
+  3. String - characters including letters, numbers and symbols
+  4. Boolean - only two possible values: True or False, 1 or 0
+
+** For the following data, using the above 4 data types only, can you identify the most suitable data type for it?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:      
+
+#+BEGIN_SRC 
+age
+your name
+area of a circle
+the result of comparing two ages
+date of birth
+          
+#+END_SRC
+
+
+* Variables
+:PROPERTIES:
+  :HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It 
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END: 
+- Before we talk about variables, let's draw a circle with Turtle of a radius of 90
+- We can use 90 as it or we can use a variable called r to store the number 90 like this (in maths it could be said let r equals 90)
+
+   r = 90
+ #+BEGIN_EXPORT HTML
+<iframe src="https://trinket.io/embed/python/a9339697e4" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+ #+END_EXPORT
+
+** Practice 1
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+ #+BEGIN_EXPORT HTML
+<iframe src="https://trinket.io/embed/python/0043de449f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+ #+END_EXPORT
+** Practice 2 - learn it!
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Variables are pieces of data with names that are stored in computers' memories. Look at the following two examples and then finish the 4 problems.
+ 
+*Example 1* : A=30, using varialbes only, double the value in A
+#+begin_src python -n
+  A = 30
+  A = A + A
+#+end_src
+*Example 2* : A=30, B=5, using varialbes only, make the variable B value equals 6
+#+begin_src python -n
+  A = 30
+  B = 5
+  B = A/B
+#+end_src
+
+** Practice 2 - your turn!
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- Open IDLE on your PC. In the shell, work on the following tasks. 
+ *Problem 1* : make A and B both equal 6
+ #+begin_src python
+   A = 10
+   B = 4
+ #+end_src
+
+  *Problem 2* : make A and B both equal 25 while C equal 22
+ #+begin_src python
+   A = 10
+   B = 15
+   C = 3
+ #+end_src
+
+  *Problem 3* : make A equal 4 and B equal 12
+ #+begin_src python
+   A = 12
+   B = 3
+ #+end_src
+
+  *Problem 4* : swap! make A equal 4 and B equal 10
+ #+begin_src python
+   A = 10
+   B = 4
+ #+end_src
+
+** Key Points Check
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: key
+:END: 
+   1. Computers take input data, process them and generate outputs we are interested in
+   2. There are 4 common data types: integer, string, real/float and Boolean
+   3. Variables are named pieces of data for easy processing by computers and their names should be easily understood for their purposes in a program by humans

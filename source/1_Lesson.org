@@ -117,68 +117,115 @@
 :HTML_CONTAINER_CLASS: activity
 :END:
 
-** Problem solving
+** Why data types?
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END: 
-- You have been solving problems all your life, from obvious problems such as puzzle games, like the [[https://en.wikipedia.org/wiki/Tower_of_Hanoi][Tower of Hanoi]], to going through your every day life. As you mature, you are getting better at it.
+- Computers work by processing some data and produce some outputs we are interested in knowing.  For example,
+  - when you log on to your account, computers compare your input username and password with what stored on computers to either allow you log in or not.
+  - in a computer aided car, the data could be distance to objects and the car's own speed and direction etc. Using those data, the car's onboard computer can send alert to the driver or slowing down the car.
+  - when you sign up to an online service, it may ask you for your name, your age and your email address. Computers then use those data to decide if you meet the age requirement, or use the email address to send your account information.
+- Computers need to know what types of data they are working with mainly for two reasons:
+  1. to store them correctly
+  2. to use them safely in calculations. For example, your age divided your name is not a safe calculation and computers will not perform
 
-[[./img/Tower_of_Hanoi_4.gif]]
+- There are 4 common data types:
+  1. Integer - whole numbers
+  2. Real/float - numbers with decimal point
+  3. String - characters including letters, numbers and symbols
+  4. Boolean - only two possible values: True or False, 1 or 0
 
-     By [[https://commons.wikimedia.org/w/index.php?curid%3D85401][André Karwath aka Aka]] - Own work, CC BY-SA 2.5
-
-- Lets work through some problems and see how you solve them.
+** For the following data, using the above 4 data types only, can you identify the most suitable data type for it?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:      
 
 #+BEGIN_SRC 
-Problem 1: You have been asked by your teacher to rank the quiz score 
-           in your form for each of the 8 teams from the highest to the lowest.
-           
-How do you do it? 
+age
+your name
+area of a circle
+the result of comparing two ages
+date of birth
           
 #+END_SRC
-- Try to describe the steps you used to the person next to you. 
-- Is your solution more efficient than your peers?
 
 
-#+BEGIN_SRC 
-Problem 2: You have walked to your school along the same route for months
- with your two of your best friend. You meet them up along the way. 
- But you have just made another friend and you want to meet him along
- the way. You need to adjust your route so that you don't have to walk
- unneccessary distance. See the map below.
-#+END_SRC
-[[./img/streetMapRoute.jpeg]]
-
-- Can you describe the steps and reasons you followed to reach your solution for the above problem to the person next to you?
-- Think how complex the problem would be if you have to meet up with more friends on your way to school.
-- How parcel delivery companies plan their delivery routes? 
-
-* Computational Thinking
+* Variables
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+  :HTML_CONTAINER_CLASS: activity
 :END:
 ** Learn It 
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END: 
-- As a human, you find that sorting the scores from 8 teams is quite easy.
-- But what about sorting the whole year's? the whole school's? You can, but it will take you a much longer time.
-- You may be already thinking about computers and using spreadsheet to help you sort a much longer list of scores.
-- But humans must create spreadsheet software first. What's more the spreadsheet software humans created must be able to sort numbers.
-- When we deal with large amount of data and more complex problems, computers can *help* us to solve those problems more quickly than humans can, *BUT* humans must describe the steps to solve the problems to the computers first.
-- *Computational thinking* is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer can effectively carry out.
+- Before we talk about variables, let's draw a circle with Turtle of a radius of 90
+- We can use 90 as it or we can use a variable called r to store the number 90 like this (in maths it could be said let r equals 90)
+
+   r = 90
+ #+BEGIN_EXPORT HTML
+<iframe src="https://trinket.io/embed/python/a9339697e4" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+ #+END_EXPORT
+
+** Practice 1
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+ #+BEGIN_EXPORT HTML
+<iframe src="https://trinket.io/embed/python/0043de449f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+ #+END_EXPORT
+** Practice 2 - learn it!
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Variables are pieces of data with names that are stored in computers' memories. Look at the following two examples and then finish the 4 problems.
+ 
+*Example 1* : A=30, using varialbes only, double the value in A
+#+begin_src python -n
+  A = 30
+  A = A + A
+#+end_src
+*Example 2* : A=30, B=5, using varialbes only, make the variable B value equals 6
+#+begin_src python -n
+  A = 30
+  B = 5
+  B = A/B
+#+end_src
+
+** Practice 2 - your turn!
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- Open IDLE on your PC. In the shell, work on the following tasks. 
+ *Problem 1* : make A and B both equal 6
+ #+begin_src python
+   A = 10
+   B = 4
+ #+end_src
+
+  *Problem 2* : make A and B both equal 25 while C equal 22
+ #+begin_src python
+   A = 10
+   B = 15
+   C = 3
+ #+end_src
+
+  *Problem 3* : make A equal 4 and B equal 12
+ #+begin_src python
+   A = 12
+   B = 3
+ #+end_src
+
+  *Problem 4* : swap! make A equal 4 and B equal 10
+ #+begin_src python
+   A = 10
+   B = 4
+ #+end_src
 
 ** Key Points Check
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: key
 :END: 
-   1. Humans must develop possible solutions
-   2. Humans must present the solutions in a way computers can understand
-   3. Computers can only help us solve problems
-   4. =Computational thinking= is the thought processes of understanding a problem and presenting its solution(s) in such a way that a computer can follow and carry out the solution 
-** Badge It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: badge
-:END:
-*** Learning strand: *Information Technology*
-- Read[[http://www.bcs.org/content/ConWebDoc/55416][ this article]]. Use your own words, one paragraph each, list 4 things you have learned from the article on computational thinking.
+   1. Computers take input data, process them and generate outputs we are interested in
+   2. There are 4 common data types: integer, string, real/float and Boolean
+   3. Variables are named pieces of data for easy processing by computers and their names should be easily understood for their purposes in a program by humans

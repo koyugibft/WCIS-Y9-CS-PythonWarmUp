@@ -100,6 +100,16 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
 :END:
+
+description list:
+
+Matlab is a funny language. 
+ - Scope :: Scope doesn't work as expected, and messes everything up
+   when loops mix variables up in recursive functions.
+ope doesn't work as expected, and messes everything up
+ - Namespaces :: You wish. 
+ - Header Files :: Nope.
+   
 * Objectives
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: objectives
@@ -112,7 +122,7 @@
 - Develop understanding the purpose of loops in problem solving
 - Develop skills in using *for* and *while* loops
   
-* Data Types
+* Loops aka Iterations
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -125,7 +135,7 @@
 
   #+begin_export html
   <img src ='./img/turtle5rings.png' width=30%>
-  <iframe src="https://trinket.io/embed/python/a951aff485" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <iframe src="https://trinket.io/embed/python/a951aff485" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
   #+end_export
 
  - How about draw a shape like this?   
@@ -140,91 +150,30 @@
 :END:      
 
 - Repetitively typing the same code again and again is boring and can make your code very long.
-- In programming languages, repetitions make use of called looping, formally, *iteration*, which we can use to cut out our reptitive code
+- In programming languages, repetitions make use of looping, formally, *iteration*, which we can use to cut out our reptitive code
 - *for loops* are for fixed number of repetitions. For example, we need to draw a set number of the same circle in our previous exercises
 - In python,  *for loops* can be used in the following ways:
 
+  #+begin_export html
+<iframe src="https://trinket.io/embed/python/e74de5d00c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  #+end_export
   
-  
-  
-
-
-* Variables
-:PROPERTIES:
-  :HTML_CONTAINER_CLASS: activity
-:END:
-** Learn It 
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END: 
-- Before we talk about variables, let's draw a circle with Turtle of a radius of 90
-- We can use 90 as it or we can use a variable called r to store the number 90 like this (in maths it could be said let r equals 90)
-
-   r = 90
- #+BEGIN_EXPORT HTML
-<iframe src="https://trinket.io/embed/python/a9339697e4" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
- #+END_EXPORT
-
-** Practice 1
+** Your Tasks - screenshot your finished code and upload
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
- #+BEGIN_EXPORT HTML
-<iframe src="https://trinket.io/embed/python/0043de449f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
- #+END_EXPORT
-** Practice 2 - learn it!
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- Variables are pieces of data with names that are stored in computers' memories. Look at the following two examples and then finish the 4 problems.
- 
-*Example 1* : A=30, using varialbes only, double the value in A
-#+begin_src python -n
-  A = 30
-  A = A + A
-#+end_src
-*Example 2* : A=30, B=5, using varialbes only, make the variable B value equals 6
-#+begin_src python -n
-  A = 30
-  B = 5
-  B = A/B
-#+end_src
+Launch IDLE on your PC and create a new python file in the code editor for the two tasks below.
+- Task 1 :: using for loops to draw the following two shapes. HINTS: the first shape has 5 rings while the second has 30.
+  #+begin_export html
+  <img src ='./img/turtle5rings.png' width=20% style="display:inline">  <img src ='./img/turtle30rings.png' width=20% style="display:inline">
+  #+end_export
 
-** Practice 2 - your turn!
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
+- Task 2 :: using for loops and one variable to create the following image. HINTS: using penup, pendown, and forward for the turtle movements. Each dash is longer by 5 than the previous one
+  #+begin_export html
+ <img src ='./img/loopDashedlines.png' width=50%>
+  #+end_export
 
-- Open IDLE on your PC. In the shell, work on the following tasks. 
- *Problem 1* : make A and B both equal 6
- #+begin_src python
-   A = 10
-   B = 4
- #+end_src
-
-  *Problem 2* : make A and B both equal 25 while C equal 22
- #+begin_src python
-   A = 10
-   B = 15
-   C = 3
- #+end_src
-
-  *Problem 3* : make A equal 4 and B equal 12
- #+begin_src python
-   A = 12
-   B = 3
- #+end_src
-
-  *Problem 4* : swap! make A equal 4 and B equal 10
- #+begin_src python
-   A = 10
-   B = 4
- #+end_src
-
-** Key Points Check
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: key
-:END: 
-   1. Computers take input data, process them and generate outputs we are interested in
-   2. There are 4 common data types: integer, string, real/float and Boolean
-   3. Variables are named pieces of data for easy processing by computers and their names should be easily understood for their purposes in a program by humans
+- Extension Task :: using for loops and one variable to create the following image. The first circle has a radius of 5 and each subsequent circles' radius increase by 5.
+  #+begin_export html
+ <img src ='./img/loopExtension1.png' width=50%>
+  #+end_export

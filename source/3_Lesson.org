@@ -1,0 +1,236 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/strikeThrough.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil html-postamble:nil
+#+TITLE: Topic 3 - Functions
+#+AUTHOR: X Ellis
+
+#+BEGIN_EXPORt html
+
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Topic1</a></li>
+      <li><a href="2_Lesson.html">Topic2</a></li>
+      <li><a href="3_Lesson.html">Topic3</a></li>
+      <li><a href="4_Lesson.html">Topic4</a></li>
+      <li><a href="5_Lesson.html">Topic5</a></li>
+      <li><a href="Evaluation.html">Evaluation</a></li>
+      <li><a href="homework.html">Prep</a></li>
+    </ul>
+  </div>
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+#+END_EXPORT
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+description list:
+
+Matlab is a funny language. 
+ - Scope :: Scope doesn't work as expected, and messes everything up
+   when loops mix variables up in recursive functions.
+ope doesn't work as expected, and messes everything up
+ - Namespaces :: You wish. 
+ - Header Files :: Nope.
+   
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing your skills in problem solving using programming language Python, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Further develop skills in using *for* and *while* loops
+- Developing skills in logical thinking when solving problems
+- Develop understanding the purpose of functions in programming
+- Developing skills in creating user defined functions to break down a larger problem into smaller problems
+  
+* Functions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+
+
+** Back to loop
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- Task 1 :: Take a look at the following code that draws 8 squares using a for loop. Your task is to identify the repeated code and make another for loop to reduce the line of code
+
+  #+begin_export html
+<iframe src="https://trinket.io/embed/python/196559988e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+ #+end_export
+
+ - Task 2 :: Change the code above (keep your new for loop) so that 8 pentagons will draw instead of 8 squares as shown below?
+ #+begin_export html
+<img src="./img/function8Pentagons.png" width=50%>
+#+end_export
+   
+** What is a function?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- When solving big problems, it is a good practice to break up problems into smaller, easier to solve problems, which lets you focus on one thing at atime.
+- *Functions* are one way to do this in Python. Let’s take Tom.reset() for example. reset is a *function* we call on our turtle, and it is actually an abstraction for a number of steps, namely:
+
+  - Erase the drawing board.
+  - Set the width and color back to default.
+  - Move the turtle back to its initial position.
+
+- But because all the code is contained in the function, we don’t have to worry about these details. We can simply call this function, and know it will do what it says for us.
+- Try Tom.reset() in the above code and see what it does!
+
+** So how to write your own functions?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+- Identify the need! Will this function solve one problem? For example, will it draw a square so I can use it to draw 8 of them?
+- In Python, to define a function, you use the key word *def*.  The following exmaple has a function named draw_square:
+  #+begin_src python
+            def draw_square():
+                for i in range(4):
+                    Tom.fd(100)
+                    Tom.left(90)
+  #+end_src
+- Once a function is defined, you can *call* the function using its name to perform the purpose the function is defined for:
+      #+begin_src python
+        def draw_square():
+            for i in range(4):
+                Tom.fd(100)
+                Tom.left(90)
+
+        for i in range(8):
+            draw_square()    
+            Tom.left(45)
+    #+end_src
+
+** Functions with parameters
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- As we add functions to our code, we remove duplication.  This process is called "modular" programming. This is a good practice as it allows us to break down problems.
+- But the functions we have defined so far are not very flexible.  If we want to draw a  different size of square,  we need to write a new function.    
+- That is why we need to be able to give parameters, also called arguments, to the function. This way the variables in the function can have different values each time we call the function.
+   For example, the built-in forward function can have a parameter. We can move forward by 100 or 200 or -100! Tom.forward(100), Tom.forward(200) etc.
+- Even the turtle can be a parameter if we have more than one turtle in our code.
+- To improve our function, we added one parameter called *length*
+   #+begin_src Python
+      def draw_square(length):
+          for i in range(4):
+              Tom.fd(length)
+              Tom.left(90)
+
+      for i in range(8):
+          draw_square(100)    
+          Tom.left(45)
+  #+end_src
+
+  - To improve our function even more, we added one more parameter called *turtleName*. Notice how the order of parameters when calling the function!
+   #+begin_src Python
+      def draw_square(length, turtleName):
+          for i in range(4):
+              turtleName.fd(length)
+              turtleName.left(90)
+
+      for i in range(8):
+          draw_square(100, Tom)    
+          Tom.left(45)
+  #+end_src
+
+  - You can add as many parameters as needed. Just make sure when you call the function, you have the same number of parameters and in the same oder.
+** Your Tasks - screenshot your finished code and upload
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+Launch IDLE on your PC and create a new python file in the code editor for the two tasks below.
+- Task 1 :: define a function called draw_pentagon and call it in a loop to draw 5 evenly spaced pentagon along a horizontal line
+
+- Task 2 :: define a function called draw_hexagon with two parameters, one for length, one for colour. Draw a shape like below:
+  #+begin_export html
+ <img src ='./img/hexagonBlueRed.png' width=50%>
+  #+end_export
+
+- Extension Task :: define a function with two parameters (length and sides) that can draw a shape with as many number of equal sides as it needs to be (more than two) and at any length and create a image like below:
+  #+begin_export html
+ <img src ='./img/functionExtension.png' width=50%>
+  #+end_export

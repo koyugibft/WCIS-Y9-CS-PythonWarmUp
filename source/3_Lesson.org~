@@ -1,0 +1,179 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/strikeThrough.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil html-postamble:nil
+#+TITLE: Topic 2 - Going Loopy for Good
+#+AUTHOR: X Ellis
+
+#+BEGIN_EXPORt html
+
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Topic1</a></li>
+      <li><a href="2_Lesson.html">Topic2</a></li>
+      <li><a href="3_Lesson.html">Topic3</a></li>
+      <li><a href="4_Lesson.html">Topic4</a></li>
+      <li><a href="5_Lesson.html">Topic5</a></li>
+      <li><a href="Evaluation.html">Evaluation</a></li>
+      <li><a href="homework.html">Prep</a></li>
+    </ul>
+  </div>
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+#+END_EXPORT
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+description list:
+
+Matlab is a funny language. 
+ - Scope :: Scope doesn't work as expected, and messes everything up
+   when loops mix variables up in recursive functions.
+ope doesn't work as expected, and messes everything up
+ - Namespaces :: You wish. 
+ - Header Files :: Nope.
+   
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing your skills in problem solving using programming language Python, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Further developing understanding on data types and purposes of variables
+- Develop understanding the purpose of loops in problem solving
+- Develop skills in using *for* and *while* loops
+  
+* Loops aka Iterations
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+
+** Why loops?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END: 
+- Take a look at the following image. Using the trinket window provided, try to use turtle to produce that image.
+
+  #+begin_export html
+  <img src ='./img/turtle5rings.png' width=30%>
+  <iframe src="https://trinket.io/embed/python/a951aff485" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  #+end_export
+
+ - How about draw a shape like this?   
+
+  #+begin_export html
+  <img src ='./img/turtle30rings.png' width=30%>
+  #+end_export
+
+** For loops
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:      
+
+- Repetitively typing the same code again and again is boring and can make your code very long.
+- In programming languages, repetitions make use of looping, formally, *iteration*, which we can use to cut out our reptitive code
+- *for loops* are for fixed number of repetitions. For example, we need to draw a set number of the same circle in our previous exercises
+- In python,  *for loops* can be used in the following ways:
+
+  #+begin_export html
+<iframe src="https://trinket.io/embed/python/e74de5d00c" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  #+end_export
+  
+** Your Tasks - screenshot your finished code and upload
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+Launch IDLE on your PC and create a new python file in the code editor for the two tasks below.
+- Task 1 :: using for loops to draw the following two shapes. HINTS: the first shape has 5 rings while the second has 30.
+  #+begin_export html
+  <img src ='./img/turtle5rings.png' width=20% style="display:inline">  <img src ='./img/turtle30rings.png' width=20% style="display:inline">
+  #+end_export
+
+- Task 2 :: using for loops and one variable to create the following image. HINTS: using penup, pendown, and forward for the turtle movements. Each dash is longer by 5 than the previous one
+  #+begin_export html
+ <img src ='./img/loopDashedlines.png' width=50%>
+  #+end_export
+
+- Extension Task :: using for loops and one variable to create the following image. The first circle has a radius of 5 and each subsequent circles' radius increase by 5.
+  #+begin_export html
+ <img src ='./img/loopExtension1.png' width=50%>
+  #+end_export

@@ -135,7 +135,7 @@
   3. String - characters including letters, numbers and symbols
   4. Boolean - only two possible values: True or False, 1 or 0
 
-** For the following data, using the above 4 data types only, can you identify the most suitable data type for it?
+** Data Type Practice 1: For the following data, using the above 4 data types only, can you identify the most suitable data type for it?
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:      
@@ -148,6 +148,15 @@ the result of comparing two ages
 date of birth
           
 #+END_SRC
+
+** Data Type Practice 2:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:      
+#+begin_export html
+<iframe src="https://trinket.io/embed/python/400c76a603" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+end_export
+
 
 
 * Variables

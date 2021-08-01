@@ -66,38 +66,30 @@
 <p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
-<div id="outline-container-org0cb75d1" class="outline-2 objectives">
-<h2 id="org0cb75d1"><span class="section-number-2">1</span> Objectives</h2>
+<div id="outline-container-org34f355d" class="outline-2 objectives">
+<h2 id="org34f355d"><span class="section-number-2">1</span> Objectives</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org72a366f" class="outline-3 learn">
-<h3 id="org72a366f">Developing your skills in problem solving using programming language Python, specifically:</h3>
-<div class="outline-text-3" id="text-org72a366f">
+<div id="outline-container-orgc7f8fb1" class="outline-3 learn">
+<h3 id="orgc7f8fb1">Developing your skills in problem solving using programming language Python, specifically:</h3>
+<div class="outline-text-3" id="text-orgc7f8fb1">
 <ul class="org-ul">
 <li>Further developing understanding on data types and purposes of variables</li>
 <li>Develop understanding the purpose of loops in problem solving</li>
 <li>Develop skills in using <b>for</b> and <b>while</b> loops</li>
 </ul>
-<p>
-Matlab is a funny language. 
-</p>
-<dl class="org-dl">
-<dt>Scope</dt><dd>Scope doesn't work as expected, and messes everything up
-when loops mix variables up in recursive functions.</dd>
-<dt>Namespaces</dt><dd>You wish.</dd>
-<dt>Header Files</dt><dd>Nope.</dd>
-</dl>
 </div>
 </div>
 </div>
-<div id="outline-container-org63be82b" class="outline-2 activity">
-<h2 id="org63be82b"><span class="section-number-2">2</span> Loops aka Iterations</h2>
+
+<div id="outline-container-orgaea5f2a" class="outline-2 activity">
+<h2 id="orgaea5f2a"><span class="section-number-2">2</span> Loops aka Iterations</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 
-<div id="outline-container-org0b69fd1" class="outline-3 learn">
-<h3 id="org0b69fd1">Why loops?</h3>
-<div class="outline-text-3" id="text-org0b69fd1">
+<div id="outline-container-orgb10ff51" class="outline-3 learn">
+<h3 id="orgb10ff51">Why loops?</h3>
+<div class="outline-text-3" id="text-orgb10ff51">
 <ul class="org-ul">
 <li><p>
 Take a look at the following image. Using the trinket window provided, try to use turtle to produce that image.
@@ -117,12 +109,12 @@ How about draw a shape like this?
 </div>
 </div>
 
-<div id="outline-container-orgbe5a1f8" class="outline-3 learn">
-<h3 id="orgbe5a1f8">For loops</h3>
-<div class="outline-text-3" id="text-orgbe5a1f8">
+<div id="outline-container-orgdece740" class="outline-3 learn">
+<h3 id="orgdece740">For loops</h3>
+<div class="outline-text-3" id="text-orgdece740">
 <ul class="org-ul">
 <li>Repetitively typing the same code again and again is boring and can make your code very long.</li>
-<li>In programming languages, repetitions make use of called looping, formally, <b>iteration</b>, which we can use to cut out our reptitive code</li>
+<li>In programming languages, repetitions make use of looping, formally, <b>iteration</b>, which we can use to cut out our reptitive code</li>
 <li><b>for loops</b> are for fixed number of repetitions. For example, we need to draw a set number of the same circle in our previous exercises</li>
 <li><p>
 In python,  <b>for loops</b> can be used in the following ways:
@@ -133,9 +125,9 @@ In python,  <b>for loops</b> can be used in the following ways:
 </div>
 </div>
 
-<div id="outline-container-orgc4fa996" class="outline-3 try">
-<h3 id="orgc4fa996">Your Tasks - screenshot your finished code and upload</h3>
-<div class="outline-text-3" id="text-orgc4fa996">
+<div id="outline-container-org82c4e2e" class="outline-3 try">
+<h3 id="org82c4e2e">Your Tasks - screenshot your finished code and upload</h3>
+<div class="outline-text-3" id="text-org82c4e2e">
 <p>
 Launch IDLE on your PC and create a new python file in the code editor for the two tasks below.
 </p>
@@ -151,7 +143,67 @@ using for loops and one variable to create the following image. HINTS: using pen
 <img src ='./img/loopDashedlines.png' width=50%></dd>
 
 <dt>Extension Task</dt><dd><p>
-using for loops and one variable to create the following image
+using for loops and one variable to create the following image. The first circle has a radius of 5 and each subsequent circles' radius increase by 5.
+</p>
+<img src ='./img/loopExtension1.png' width=50%></dd>
+</dl>
+</div>
+</div>
+
+
+<div id="outline-container-org306d5d6" class="outline-3 learn">
+<h3 id="org306d5d6">While loops</h3>
+<div class="outline-text-3" id="text-org306d5d6">
+<ul class="org-ul">
+<li>In python, we have learned that <b>for loops</b> can be used to repeat a block of code for a set number of times.</li>
+<li>There is another kind of loop called <b>while loop</b> that will repeat a block code based on a set condition. As long as the condition is true, the block of code indented under it will be executed</li>
+</ul>
+<p>
+For example the following will print "Hello world!" for ever!
+</p>
+<div class="org-src-container">
+<pre class="src src-Python">
+A = True
+while A:
+    print("Hello world!")
+
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>This kind of loop can be very useful when we don't know how many repetitions we need. For example, you can play a game for as long as you want until you press quit or exit button.
+This can be simulated as following:</li>
+</ul>
+
+<iframe src="https://trinket.io/embed/python/c3bdbf9460" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+</div>
+<div id="outline-container-org4df162f" class="outline-3 try">
+<h3 id="org4df162f">Your Tasks - screenshot your finished code and upload</h3>
+<div class="outline-text-3" id="text-org4df162f">
+<p>
+Launch IDLE on your PC and create a new python file in the code editor for the two tasks below.
+</p>
+<dl class="org-dl">
+<dt>Task 1</dt><dd><p>
+using for loops to draw the following two shapes. HINTS: the first shape has 5 rings while the second has 30.
+</p>
+<img src ='./img/turtle5rings.png' width=20% style="display:inline">  <img src ='./img/turtle30rings.png' width=20% style="display:inline"></dd>
+
+<dt>Task 2</dt><dd><p>
+using for loops and one variable to create the following image. HINTS: using penup, pendown, and forward for the turtle movements. Each dash is longer by 5 than the previous one
+</p>
+<img src ='./img/loopDashedlines.png' width=50%>
+
+<dl class="org-dl">
+<dt>Task 3</dt><dd><p>
+using while loop, for loop together and variables to draw as many squares in a 20 degree angle as long as the user answer is "y" or "Y". 
+</p>
+<img src ='./img/loopTask3Solution.png' width=50%></dd>
+</dl></dd>
+
+<dt>Extension Task</dt><dd><p>
+using for loops and one variable to create the following image. The first circle has a radius of 5 and each subsequent circles' radius increase by 5.
 </p>
 <img src ='./img/loopExtension1.png' width=50%></dd>
 </dl>

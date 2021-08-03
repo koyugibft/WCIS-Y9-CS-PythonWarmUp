@@ -66,13 +66,13 @@
 <p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
-<div id="outline-container-org373141f" class="outline-2 objectives">
-<h2 id="org373141f"><span class="section-number-2">1</span> Objectives</h2>
+<div id="outline-container-org5acfe82" class="outline-2 objectives">
+<h2 id="org5acfe82"><span class="section-number-2">1</span> Objectives</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org9d0da26" class="outline-3 learn">
-<h3 id="org9d0da26">Developing your skills in problem solving using programming language Python, specifically:</h3>
-<div class="outline-text-3" id="text-org9d0da26">
+<div id="outline-container-org7986276" class="outline-3 learn">
+<h3 id="org7986276">Developing your skills in problem solving using programming language Python, specifically:</h3>
+<div class="outline-text-3" id="text-org7986276">
 <ul class="org-ul">
 <li>Further develop skills in using <b>for</b> and <b>while</b> loops</li>
 <li>Developing skills in logical thinking when solving problems</li>
@@ -83,15 +83,15 @@
 </div>
 </div>
 
-<div id="outline-container-orgb768bca" class="outline-2 activity">
-<h2 id="orgb768bca"><span class="section-number-2">2</span> Functions</h2>
+<div id="outline-container-orgf3918a6" class="outline-2 activity">
+<h2 id="orgf3918a6"><span class="section-number-2">2</span> Functions</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 
 
-<div id="outline-container-org58259be" class="outline-3 try">
-<h3 id="org58259be">Back to loop</h3>
-<div class="outline-text-3" id="text-org58259be">
+<div id="outline-container-org8b9216c" class="outline-3 try">
+<h3 id="org8b9216c">Back to loop</h3>
+<div class="outline-text-3" id="text-org8b9216c">
 <dl class="org-dl">
 <dt>Task 1</dt><dd><p>
 Take a look at the following code that draws 8 squares using a for loop. Your task is to identify the repeated code and make another for loop to reduce the line of code
@@ -107,9 +107,9 @@ Take a look at the following code that draws 8 squares using a for loop. Your ta
 </div>
 </div>
 
-<div id="outline-container-org11c27f8" class="outline-3 learn">
-<h3 id="org11c27f8">What is a function?</h3>
-<div class="outline-text-3" id="text-org11c27f8">
+<div id="outline-container-org05b235b" class="outline-3 learn">
+<h3 id="org05b235b">What is a function?</h3>
+<div class="outline-text-3" id="text-org05b235b">
 <ul class="org-ul">
 <li>When solving big problems, it is a good practice to break up problems into smaller, easier to solve problems, which lets you focus on one thing at atime.</li>
 <li><b>Functions</b> are one way to do this in Python. Let’s take Tom.reset() for example. reset is a <b>function</b> we call on our turtle, and it is actually an abstraction for a number of steps, namely:
@@ -126,9 +126,9 @@ Take a look at the following code that draws 8 squares using a for loop. Your ta
 </div>
 </div>
 
-<div id="outline-container-org7879e86" class="outline-3 learn">
-<h3 id="org7879e86">So how to write your own functions?</h3>
-<div class="outline-text-3" id="text-org7879e86">
+<div id="outline-container-org339486e" class="outline-3 learn">
+<h3 id="org339486e">So how to write your own functions?</h3>
+<div class="outline-text-3" id="text-org339486e">
 <ul class="org-ul">
 <li>Identify the need! Will this function solve one problem? For example, will it draw a square so I can use it to draw 8 of them?</li>
 <li><p>
@@ -159,9 +159,9 @@ for i in range(8):
 </div>
 </div>
 
-<div id="outline-container-orgbd11676" class="outline-3 learn">
-<h3 id="orgbd11676">Functions with parameters</h3>
-<div class="outline-text-3" id="text-orgbd11676">
+<div id="outline-container-org4de8b5b" class="outline-3 learn">
+<h3 id="org4de8b5b">Functions with parameters</h3>
+<div class="outline-text-3" id="text-org4de8b5b">
 <ul class="org-ul">
 <li>As we add functions to our code, we remove duplication.  This process is called "modular" programming. This is a good practice as it allows us to break down problems.</li>
 <li>But the functions we have defined so far are not very flexible.  If we want to draw a  different size of square,  we need to write a new function.</li>
@@ -204,24 +204,24 @@ for i in range(8):
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb96c940" class="outline-3 try">
-<h3 id="orgb96c940">Your Tasks - screenshot your finished code and upload</h3>
-<div class="outline-text-3" id="text-orgb96c940">
+<div id="outline-container-orgbc1da29" class="outline-3 try">
+<h3 id="orgbc1da29">Your Tasks - screenshot your finished code and upload</h3>
+<div class="outline-text-3" id="text-orgbc1da29">
 <p>
 Launch IDLE on your PC and create a new python file in the code editor for the two tasks below.
 </p>
 <dl class="org-dl">
-<dt>Task 1</dt><dd>define a function called draw<sub>pentagon</sub> and call it in a loop to draw 5 evenly spaced pentagon along a horizontal line</dd>
+<dt>Task 1</dt><dd>define a function called draw_pentagon and call it in a loop to draw 5 evenly spaced pentagon along a horizontal line</dd>
 
 <dt>Task 2</dt><dd><p>
-define a function called draw<sub>hexagon</sub> with two parameters, one for length, one for colour. Draw a shape like below:
+define a function called draw_hexagon with two parameters, one for length, one for colour. Draw a shape like below:
 </p>
 <img src ='./img/hexagonBlueRed.png' width=50%></dd>
 
 <dt>Extension Task</dt><dd><p>
-using for loops and one variable to create the following image. The first circle has a radius of 5 and each subsequent circles' radius increase by 5.
+define a function with two parameters (length and sides) that can draw a shape with as many number of equal sides as it needs to be (more than two) and at any length and create a image like below:
 </p>
-<img src ='./img/loopExtension1.png' width=50%></dd>
+<img src ='./img/functionExtension.png' width=50%></dd>
 </dl>
 </div>
 </div>

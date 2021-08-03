@@ -1,0 +1,257 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/strikeThrough.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:AUTHOR num:1 creator:AUTHOR timestamp:nil toc:nil html-style:nil html-postamble:nil 
+#+TITLE: Topic 4 - If Only Logical
+#+AUTHOR: X Ellis
+
+#+BEGIN_EXPORt html
+
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Topic1</a></li>
+      <li><a href="2_Lesson.html">Topic2</a></li>
+      <li><a href="3_Lesson.html">Topic3</a></li>
+      <li><a href="4_Lesson.html">Topic4</a></li>
+      <li><a href="5_Lesson.html">Topic5</a></li>
+      <li><a href="Evaluation.html">Evaluation</a></li>
+      <li><a href="homework.html">Prep</a></li>
+    </ul>
+  </div>
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
+#+END_EXPORT
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+description list:
+
+Matlab is a funny language. 
+ - Scope :: Scope doesn't work as expected, and messes everything up
+   when loops mix variables up in recursive functions.
+ope doesn't work as expected, and messes everything up
+ - Namespaces :: You wish. 
+ - Header Files :: Nope.
+   
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing your skills in problem solving using programming language Python, specifically:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Developing skills in logical thinking when solving problems
+- Further develop skills in using *for*,  *while* loops and functions
+- Understand that conditionals are key part of problem solving
+- Understand that the results of all logical operations are Boolean values of either true or false
+- Understand that conditions using logical operations control the execution order of programs based on true or false conditions
+- Developing skills in correctly applying logical operations
+  
+* Conditionals and If Statements
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+
+
+** If statements
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- We have come cross *if statements* in previous lessons.
+- If statements are like normal English language in that we can say, "if it is raining, I will bring my umbrella".
+- Those if statements are called *conditionals*
+
+
+- Example 1 :: simple if statement
+#+begin_src Python
+A = True
+B = False
+
+if A:
+    print("A is true")
+
+if B:
+    print("B is true")
+
+#+end_src
+
+- Example 2 :: if ... else... statement
+#+begin_src Python
+A = True
+B = False
+
+if A:
+    print("A is true")
+else:
+    print("A is false")
+
+if B:
+    print("B is true")
+else:
+    print("B is false")
+
+#+end_src
+
+
+- Example 3 :: if ... elif... statement
+#+begin_src Python
+A = True
+B = False
+
+if A:
+    print("A is true")
+elif B:
+    print("B is true")
+
+if B:
+    print("B is true")
+elif A:
+    print("A is true")
+else:
+    print("Both A and B are nore true")
+
+#+end_src
+
+
+- Example 4 :: multiple conditions
+#+begin_src Python
+A = True
+B = False
+
+if A or B:
+    print("Eithe A or B is true")
+else:
+    print("None of A and B is true")
+
+if A and B:
+    print("Both A and B are true")
+elif A:
+    print("A is true")
+else:
+    print("One of A and B is not true")
+
+#+end_src
+   
+** Conditionals and Comparison Operators
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- *Comparison operators* are operators used to answer questions like "Is A equal to B?", "Is C greater than D?" etc.
+- The following table contains the common comparison operators used in Python:
+| comparison operator | meaning             |
+|---------------------+---------------------|
+| ==                  | equals              |
+| !=                  | not equals          |
+| <                   | less than           |
+| <=                  | less or equal to    |
+| >                   | greater than        |
+| >=                  | greater or equal to |
+
+
+** Comparison Operators
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+- Task 1 :: Run the following code and see if you understand the *logic*. Then do the same for the rest of the comparison operators as shown in the above table
+
+  #+begin_export html
+<iframe src="https://trinket.io/embed/python/69e8f71428" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  #+end_export
+- Task 2 :: Make a password checker
+  #+begin_export html
+<iframe src="https://trinket.io/embed/python/259343aaab" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  #+end_export
+
+** Logic Operators: and, or, not
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- logic operators like *and, or, not* can be used just like normal English. For example,
+  - "if it's raining and it's evening, I am going to stay home";
+  - "if it's raining or it's cold, I am going to stay home"
+  - "if it's not raining, I am going to see a movie"
+- run the following code and see if you understand the logic, then finish the tasks. Screenshot and upload.
+
+      
+#+begin_export html
+<iframe src="https://trinket.io/embed/python/7d25b20252" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+end_export

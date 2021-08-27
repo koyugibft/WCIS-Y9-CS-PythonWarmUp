@@ -64,13 +64,13 @@
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
 
-<div id="outline-container-org5206076" class="outline-2 activity">
-<h2 id="org5206076"><span class="section-number-2">1</span> Prep work 1 - Quiz with If Statement</h2>
+<div id="outline-container-orgd2738ba" class="outline-2 activity">
+<h2 id="orgd2738ba"><span class="section-number-2">1</span> Homework 1 - Quiz with If Statement</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org36cae8a" class="outline-3 learn">
-<h3 id="org36cae8a">Quiz It</h3>
-<div class="outline-text-3" id="text-org36cae8a">
+<div id="outline-container-org4aa5033" class="outline-3 learn">
+<h3 id="org4aa5033">Quiz It</h3>
+<div class="outline-text-3" id="text-org4aa5033">
 <ul class="org-ul">
 <li>Run the code below to see what happens.  Be sure to input your answer on the right bottom window.</li>
 <li>After running the code, have a look at the code and try to understand how it works.</li>
@@ -91,13 +91,13 @@
 </div>
 </div>
 
-<div id="outline-container-org9a0aa3a" class="outline-2 activity">
-<h2 id="org9a0aa3a"><span class="section-number-2">2</span> Prep work 2 - Half Moon Rising:</h2>
+<div id="outline-container-org83a230f" class="outline-2 activity">
+<h2 id="org83a230f"><span class="section-number-2">2</span> Homework 2 - Half Moon Rising:</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org7307c2a" class="outline-3 learn">
-<h3 id="org7307c2a">Learn It</h3>
-<div class="outline-text-3" id="text-org7307c2a">
+<div id="outline-container-org6bcc6ba" class="outline-3 learn">
+<h3 id="org6bcc6ba">Learn It</h3>
+<div class="outline-text-3" id="text-org6bcc6ba">
 <p>
 <i>I feel like we're going in circles!</i>
 </p>
@@ -113,9 +113,9 @@
 </div>
 </div>
 
-<div id="outline-container-org1cda73f" class="outline-3 try">
-<h3 id="org1cda73f">Try It</h3>
-<div class="outline-text-3" id="text-org1cda73f">
+<div id="outline-container-orgbb52060" class="outline-3 try">
+<h3 id="orgbb52060">Try It</h3>
+<div class="outline-text-3" id="text-orgbb52060">
 <p>
 <i>Think it, Trinket!</i>
 </p>
@@ -130,9 +130,9 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 <li>Remember to use penup() and pendown() to move without drawing a line!</li>
 </ul>
 </div>
-<div id="outline-container-org4c96185" class="outline-4">
-<h4 id="org4c96185">Your homework:</h4>
-<div class="outline-text-4" id="text-org4c96185">
+<div id="outline-container-orgd85f476" class="outline-4">
+<h4 id="orgd85f476">Your homework:</h4>
+<div class="outline-text-4" id="text-orgd85f476">
 <ul class="org-ul">
 <li>The code below gives you some code to draw one half circle</li>
 <li>You need to define a function called halfMoon()</li>
@@ -151,14 +151,14 @@ You then need to call the halfMoon function in a loop to create the following pa
 
 
 
-<div id="outline-container-org9acacfd" class="outline-2 activity">
-<h2 id="org9acacfd"><span class="section-number-2">3</span> Prep work 3 - Bearly work:</h2>
+<div id="outline-container-orgb6951e8" class="outline-2 activity">
+<h2 id="orgb6951e8"><span class="section-number-2">3</span> Homework 3 - Bearly work:</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 
-<div id="outline-container-orgb811f2a" class="outline-3 code">
-<h3 id="orgb811f2a">Code It</h3>
-<div class="outline-text-3" id="text-orgb811f2a">
+<div id="outline-container-org0a92689" class="outline-3 code">
+<h3 id="org0a92689">Code It</h3>
+<div class="outline-text-3" id="text-org0a92689">
 <ul class="org-ul">
 <li>Now that you've mastered the circle function in the previous homework, how about using this to draw some faces!</li>
 <li>See if you can create a bear face like the one I created below!</li>
@@ -171,7 +171,7 @@ You then need to call the halfMoon function in a loop to create the following pa
 </ul>
 
 
-<div id="orgb7330c6" class="figure">
+<div id="org72b5615" class="figure">
 <p><img src="./img/BearFace.png" alt="BearFace.png" />
 </p>
 </div>

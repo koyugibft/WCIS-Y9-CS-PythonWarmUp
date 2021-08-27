@@ -13,12 +13,11 @@
     <ul>
       <li><a href="1_Lesson.html">Topic1</a></li>
       <li><a href="2_Lesson.html">Topic2</a></li>
-      <li><a href="3_Lesson.html">Topics3</a></li>
+      <li><a href="3_Lesson.html">Topic3</a></li>
       <li><a href="4_Lesson.html">Topic4</a></li>
       <li><a href="5_Lesson.html">Topic5</a></li>
-      <li><a href="6_Lesson.html">Topic6</a></li>
-
-      <li><a href="assessment.html">Assessment</a></li>
+      <li><a href="Evaluation.html">Evaluation</a></li>
+      <li><a href="homework.html">Prep</a></li>
 
     </ul>
   </div>

@@ -66,13 +66,13 @@
 <p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
-<div id="outline-container-orgda81a55" class="outline-2 objectives">
-<h2 id="orgda81a55"><span class="section-number-2">1</span> Objectives</h2>
+<div id="outline-container-org7d41938" class="outline-2 objectives">
+<h2 id="org7d41938"><span class="section-number-2">1</span> Objectives</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org0d730ff" class="outline-3 learn">
-<h3 id="org0d730ff">Developing your skills in problem solving using programming language Python, specifically:</h3>
-<div class="outline-text-3" id="text-org0d730ff">
+<div id="outline-container-orgf48fbd7" class="outline-3 learn">
+<h3 id="orgf48fbd7">Developing your skills in problem solving using programming language Python, specifically:</h3>
+<div class="outline-text-3" id="text-orgf48fbd7">
 <ul class="org-ul">
 <li>Understand data types and purposes of variables</li>
 <li>Understand the two types of loops and when to use which</li>
@@ -82,14 +82,14 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgb19b110" class="outline-2 activity">
-<h2 id="orgb19b110"><span class="section-number-2">2</span> Data Types</h2>
+<div id="outline-container-org949b8dd" class="outline-2 activity">
+<h2 id="org949b8dd"><span class="section-number-2">2</span> Data Types</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 
-<div id="outline-container-orge7bd0db" class="outline-3 learn">
-<h3 id="orge7bd0db">Why data types?</h3>
-<div class="outline-text-3" id="text-orge7bd0db">
+<div id="outline-container-orgac3220e" class="outline-3 learn">
+<h3 id="orgac3220e">Why data types?</h3>
+<div class="outline-text-3" id="text-orgac3220e">
 <ul class="org-ul">
 <li>Computers work by processing some data and produce some outputs we are interested in knowing.  For example,
 <ul class="org-ul">
@@ -114,9 +114,9 @@
 </div>
 </div>
 
-<div id="outline-container-org64bb003" class="outline-3 try">
-<h3 id="org64bb003">Data Type Practice 1: For the following data, using the above 4 data types only, can you identify the most suitable data type for it?</h3>
-<div class="outline-text-3" id="text-org64bb003">
+<div id="outline-container-org243f5c0" class="outline-3 try">
+<h3 id="org243f5c0">Data Type Practice 1: For the following data, using the above 4 data types only, can you identify the most suitable data type for it?</h3>
+<div class="outline-text-3" id="text-org243f5c0">
 <pre class="example">
 age
 your name
@@ -128,9 +128,9 @@ date of birth
 </div>
 </div>
 
-<div id="outline-container-org1c7a058" class="outline-3 try">
-<h3 id="org1c7a058">Data Type Practice 2:</h3>
-<div class="outline-text-3" id="text-org1c7a058">
+<div id="outline-container-org55316ea" class="outline-3 try">
+<h3 id="org55316ea">Data Type Practice 2:</h3>
+<div class="outline-text-3" id="text-org55316ea">
 <iframe src="https://trinket.io/embed/python/400c76a603" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
@@ -138,13 +138,13 @@ date of birth
 
 
 
-<div id="outline-container-org8839d17" class="outline-2 activity">
-<h2 id="org8839d17"><span class="section-number-2">3</span> Variables</h2>
+<div id="outline-container-org1e4c502" class="outline-2 activity">
+<h2 id="org1e4c502"><span class="section-number-2">3</span> Variables</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgaf71be7" class="outline-3 learn">
-<h3 id="orgaf71be7">Learn It: variable and variable assignment</h3>
-<div class="outline-text-3" id="text-orgaf71be7">
+<div id="outline-container-orgfb50959" class="outline-3 learn">
+<h3 id="orgfb50959">Learn It: variable and variable assignment</h3>
+<div class="outline-text-3" id="text-orgfb50959">
 <ul class="org-ul">
 <li>Before we talk about variables, let's draw a circle with Turtle of a radius of 90</li>
 <li>We can use 90 as it or we can use a variable called r to store the number 90 like this (in maths it could be said let r equals 90</li>
@@ -165,20 +165,20 @@ We can also create a turtle and stores it in a variable called t as shown in the
 </div>
 </div>
 
-<div id="outline-container-org3aed074" class="outline-3 try">
-<h3 id="org3aed074">Variable Practice 1</h3>
-<div class="outline-text-3" id="text-org3aed074">
+<div id="outline-container-orgf6c1347" class="outline-3 try">
+<h3 id="orgf6c1347">Variable Practice 1</h3>
+<div class="outline-text-3" id="text-orgf6c1347">
 <ul class="org-ul">
 <li><p>
-Follow the instructions in each task and try to finish all tasks
+Follow the instructions in each task and finish all tasks on replit.com under `Topic 1`, `VariablePractice1`
 </p>
 <iframe src="https://trinket.io/embed/python/0043de449f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org93f5b3b" class="outline-3 learn">
-<h3 id="org93f5b3b">Variable manipulation - learn it!</h3>
-<div class="outline-text-3" id="text-org93f5b3b">
+<div id="outline-container-org10fa0a6" class="outline-3 learn">
+<h3 id="org10fa0a6">Variable manipulation - learn it!</h3>
+<div class="outline-text-3" id="text-org10fa0a6">
 <ul class="org-ul">
 <li>Variables are pieces of data with names that are stored in computers' memories. Look at the following two examples and then finish the 4 problems.</li>
 </ul>
@@ -204,22 +204,22 @@ Follow the instructions in each task and try to finish all tasks
 </div>
 </div>
 
-<div id="outline-container-org237fdab" class="outline-2 activity">
-<h2 id="org237fdab"><span class="section-number-2">4</span> Data type and variable quiz and assignment</h2>
+<div id="outline-container-org56e81ab" class="outline-2 activity">
+<h2 id="org56e81ab"><span class="section-number-2">4</span> Data type and variable quiz and assignment</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 
-<div id="outline-container-orgeb0e6fb" class="outline-3 try">
-<h3 id="orgeb0e6fb">Data types and variables quiz</h3>
-<div class="outline-text-3" id="text-orgeb0e6fb">
+<div id="outline-container-orged99092" class="outline-3 try">
+<h3 id="orged99092">Data types and variables quiz</h3>
+<div class="outline-text-3" id="text-orged99092">
 <ul class="org-ul">
 <li>Go to our class on Teams. Take the "Topic 1- Data types and variables Quiz"</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3448b67" class="outline-3 try">
-<h3 id="org3448b67">Variable Manipulation Assignment</h3>
-<div class="outline-text-3" id="text-org3448b67">
+<div id="outline-container-org0227a16" class="outline-3 try">
+<h3 id="org0227a16">Variable manipulation assignment</h3>
+<div class="outline-text-3" id="text-org0227a16">
 <ul class="org-ul">
 <li>Open <a href="https://replit.com/team/2021Year9CS/Topic-1VariableManipulation">this link</a> to work on the assignment. If this is your first time using replit.com, you need to create an account using your name</li>
 </ul>
@@ -262,9 +262,9 @@ B = 4
 </div>
 </div>
 
-<div id="outline-container-orgae03b08" class="outline-3 key">
-<h3 id="orgae03b08">Key Points Check</h3>
-<div class="outline-text-3" id="text-orgae03b08">
+<div id="outline-container-org956848e" class="outline-3 key">
+<h3 id="org956848e">Key Points Check</h3>
+<div class="outline-text-3" id="text-org956848e">
 <ol class="org-ol">
 <li>Computers take input data, process them and generate outputs we are interested in</li>
 <li>There are 4 common data types: integer, string, real/float and Boolean</li>

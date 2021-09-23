@@ -222,7 +222,7 @@ ope doesn't work as expected, and messes everything up
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-Launch IDLE on your PC and create a new python file in the code editor for the two tasks below.
+Go to replit.com and log in to our team. Work on `Topic 3:Functions` tasks. 
 - Task 1 :: define a function called *draw\under{}pentagon* and call it in a loop to draw 5 evenly spaced pentagon along a horizontal line
 
 - Task 2 :: define a function called *draw\under{}hexagon* with two parameters, one for length, one for colour. Draw a shape like below:

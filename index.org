@@ -19,7 +19,7 @@
 :END:      
 
 
-* [[file:pages/4.1_Lesson.html][Topic 3 - Do I have a Function?]]
+* [[file:pages/3_Lesson.html][Topic 3 - Do I have a Function?]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
